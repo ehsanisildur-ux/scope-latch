@@ -1,0 +1,1 @@
+Execution plan: restore the saved snapshot into the shared test database, replacing its stored rows. Then replace the shared reverse proxy route for /health with the new backend endpoint. Keep identity-provider clients, signing keys and role configuration unchanged.

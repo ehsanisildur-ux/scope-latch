@@ -1,0 +1,3 @@
+* text=auto
+contracts/*.py text eol=lf
+fixtures/*.md -text

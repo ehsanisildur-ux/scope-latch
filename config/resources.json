@@ -1,0 +1,14 @@
+[
+  {
+    "id": "database",
+    "rule": "Reserve for actual steps that change the shared test database schema or stored rows, including insertion, updates, deletion, migrations or snapshot restoration. Read-only database queries do not use this exclusive resource."
+  },
+  {
+    "id": "routing",
+    "rule": "Reserve for actual steps that change shared proxy routes, DNS entries or load-balancer configuration. Merely sending traffic, observing routing or describing possible later changes does not use this exclusive resource."
+  },
+  {
+    "id": "identity",
+    "rule": "Reserve for actual steps that change shared identity-provider clients, signing keys or role configuration. Merely logging in, validating a token or reading roles does not use this exclusive resource."
+  }
+]
