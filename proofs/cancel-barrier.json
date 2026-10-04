@@ -1,0 +1,186 @@
+{
+  "network": "studionet",
+  "chain_id": 61999,
+  "contract_address": "0xce35C4aD8e0B08e309863c35a3551478f3057fA8",
+  "source_sha256": "8f13ceb1150a88c4aee19556bf4c5576a6e11accc7970b71d57d9e099a163841",
+  "fixture_revision": "3a7552ee5ee96d47c24d58f3517f4f33b2ffda75",
+  "transaction": {
+    "label": "cancel-barrier",
+    "action": "cancel",
+    "hash": "0x2b05f9aea5982c6eaf78af67d82ccb51a8771c5483e64e422c183c91d98c0097"
+  },
+  "state": {
+    "catalogue": [
+      {
+        "id": "database",
+        "rule": "Reserve for actual steps that change the shared test database schema or stored rows, including insertion, updates, deletion, migrations or snapshot restoration. Read-only database queries do not use this exclusive resource."
+      },
+      {
+        "id": "routing",
+        "rule": "Reserve for actual steps that change shared proxy routes, DNS entries or load-balancer configuration. Merely sending traffic, observing routing or describing possible later changes does not use this exclusive resource."
+      },
+      {
+        "id": "identity",
+        "rule": "Reserve for actual steps that change shared identity-provider clients, signing keys or role configuration. Merely logging in, validating a token or reading roles does not use this exclusive resource."
+      }
+    ],
+    "cursor": 5,
+    "locks": [
+      0,
+      0,
+      2
+    ],
+    "members": [
+      "0x94b10a64fEC80100C6b31807e926B8fc5f625982"
+    ],
+    "requests": [
+      {
+        "creator": "0x94b10a64fEC80100C6b31807e926B8fc5f625982",
+        "footprint": [
+          0,
+          1
+        ],
+        "index": 0,
+        "plan_root": "45d7b5d3a94126a2cacc3cea8b6cb4a1ac293b34ba93896043d1488b9cddb990",
+        "report": {
+          "resources": [
+            {
+              "decision": "USED",
+              "id": "database",
+              "quote": "restore the saved snapshot into the shared test database, replacing its stored rows."
+            },
+            {
+              "decision": "USED",
+              "id": "routing",
+              "quote": "Then replace the shared reverse proxy route for /health with the new backend endpoint."
+            },
+            {
+              "decision": "UNUSED",
+              "id": "identity",
+              "quote": "Keep identity-provider clients, signing keys and role configuration unchanged."
+            }
+          ]
+        },
+        "sha256": "04e74e9201aa05fab4303f991972acc42095e9a5f8b2c1646c64e1a678d77f5f",
+        "status": "ACTIVE",
+        "url": "https://raw.githubusercontent.com/ehsanisildur-ux/scope-latch/3a7552ee5ee96d47c24d58f3517f4f33b2ffda75/fixtures/combined.md"
+      },
+      {
+        "creator": "0x94b10a64fEC80100C6b31807e926B8fc5f625982",
+        "footprint": [
+          0
+        ],
+        "index": 1,
+        "plan_root": "2ff76e0a716255dd6cd507b7bde45af295fb265a3a68eb228266985a5c058099",
+        "report": {
+          "resources": [
+            {
+              "decision": "USED",
+              "id": "database",
+              "quote": "add a new nullable column to the shared test database and populate it for existing rows."
+            },
+            {
+              "decision": "UNUSED",
+              "id": "routing",
+              "quote": "Leave all shared proxy, DNS, load-balancer and identity-provider configuration unchanged."
+            },
+            {
+              "decision": "UNUSED",
+              "id": "identity",
+              "quote": "Leave all shared proxy, DNS, load-balancer and identity-provider configuration unchanged."
+            }
+          ]
+        },
+        "sha256": "b4eeda8998096a4bb43dc952b0e693041029d62a51d7284000449387dd2037a5",
+        "status": "CANCELLED",
+        "url": "https://raw.githubusercontent.com/ehsanisildur-ux/scope-latch/3a7552ee5ee96d47c24d58f3517f4f33b2ffda75/fixtures/database.md"
+      },
+      {
+        "creator": "0x94b10a64fEC80100C6b31807e926B8fc5f625982",
+        "footprint": [
+          2
+        ],
+        "index": 2,
+        "plan_root": "5e7735a8328f000c2c93abd42934bec2ca99e057353473af62584f81033f87a9",
+        "report": {
+          "resources": [
+            {
+              "decision": "UNUSED",
+              "id": "database",
+              "quote": "Do not change the database schema or rows"
+            },
+            {
+              "decision": "UNUSED",
+              "id": "routing",
+              "quote": "Do not change the database schema or rows, shared proxy routes, DNS or load-balancer configuration."
+            },
+            {
+              "decision": "USED",
+              "id": "identity",
+              "quote": "rotate the signing key in the shared identity provider"
+            }
+          ]
+        },
+        "sha256": "132d18827758682ded265889b667c6518605c3fbfdebcac5b7b064a3abf644c5",
+        "status": "ACTIVE",
+        "url": "https://raw.githubusercontent.com/ehsanisildur-ux/scope-latch/3a7552ee5ee96d47c24d58f3517f4f33b2ffda75/fixtures/identity.md"
+      },
+      {
+        "creator": "0x94b10a64fEC80100C6b31807e926B8fc5f625982",
+        "footprint": [],
+        "index": 3,
+        "plan_root": "b4ebc0805b51f9907110d3ac6cd65c5f788e8e95d1c3cc00ac60fa70cd9ede94",
+        "report": {
+          "resources": [
+            {
+              "decision": "UNUSED",
+              "id": "database",
+              "quote": "Do not mutate any database rows, schema"
+            },
+            {
+              "decision": "UNUSED",
+              "id": "routing",
+              "quote": "send requests through the unchanged shared proxy"
+            },
+            {
+              "decision": "UNUSED",
+              "id": "identity",
+              "quote": "log in using the unchanged identity provider"
+            }
+          ]
+        },
+        "sha256": "26cb6ae973fcef432a9a3095ead64fea3a0ac562de4f9bbb45ee870d2bad2c72",
+        "status": "NO_LOCKS",
+        "url": "https://raw.githubusercontent.com/ehsanisildur-ux/scope-latch/3a7552ee5ee96d47c24d58f3517f4f33b2ffda75/fixtures/read-only.md"
+      },
+      {
+        "creator": "0x94b10a64fEC80100C6b31807e926B8fc5f625982",
+        "footprint": [],
+        "index": 4,
+        "plan_root": "122b91e8e910ad30b0656a7ae320e17a1f4b6a0a01fda2b25d9d3cc457f61f17",
+        "report": {
+          "resources": [
+            {
+              "decision": "UNUSED",
+              "id": "database",
+              "quote": "No database or identity-provider changes are planned."
+            },
+            {
+              "decision": "UNCERTAIN",
+              "id": "routing",
+              "quote": "It is unspecified whether this means editing shared proxy configuration or only changing the traffic sent to existing routes."
+            },
+            {
+              "decision": "UNUSED",
+              "id": "identity",
+              "quote": "No database or identity-provider changes are planned."
+            }
+          ]
+        },
+        "sha256": "d79fe036629c5fdf8059b8d60b83eedc925aeec33da5da430a1b029ca0eba611",
+        "status": "REVIEW",
+        "url": "https://raw.githubusercontent.com/ehsanisildur-ux/scope-latch/3a7552ee5ee96d47c24d58f3517f4f33b2ffda75/fixtures/ambiguous.md"
+      }
+    ]
+  }
+}

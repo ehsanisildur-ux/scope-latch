@@ -1,0 +1,87 @@
+{
+  "network": "studionet",
+  "chain_id": 61999,
+  "contract_address": "0xce35C4aD8e0B08e309863c35a3551478f3057fA8",
+  "source_sha256": "8f13ceb1150a88c4aee19556bf4c5576a6e11accc7970b71d57d9e099a163841",
+  "exact_source_match": true,
+  "fixture_revision": "3a7552ee5ee96d47c24d58f3517f4f33b2ffda75",
+  "sources": {
+    "combined": {
+      "url": "https://raw.githubusercontent.com/ehsanisildur-ux/scope-latch/3a7552ee5ee96d47c24d58f3517f4f33b2ffda75/fixtures/combined.md",
+      "sha256": "04e74e9201aa05fab4303f991972acc42095e9a5f8b2c1646c64e1a678d77f5f"
+    },
+    "database": {
+      "url": "https://raw.githubusercontent.com/ehsanisildur-ux/scope-latch/3a7552ee5ee96d47c24d58f3517f4f33b2ffda75/fixtures/database.md",
+      "sha256": "b4eeda8998096a4bb43dc952b0e693041029d62a51d7284000449387dd2037a5"
+    },
+    "identity": {
+      "url": "https://raw.githubusercontent.com/ehsanisildur-ux/scope-latch/3a7552ee5ee96d47c24d58f3517f4f33b2ffda75/fixtures/identity.md",
+      "sha256": "132d18827758682ded265889b667c6518605c3fbfdebcac5b7b064a3abf644c5"
+    },
+    "read-only": {
+      "url": "https://raw.githubusercontent.com/ehsanisildur-ux/scope-latch/3a7552ee5ee96d47c24d58f3517f4f33b2ffda75/fixtures/read-only.md",
+      "sha256": "26cb6ae973fcef432a9a3095ead64fea3a0ac562de4f9bbb45ee870d2bad2c72"
+    },
+    "ambiguous": {
+      "url": "https://raw.githubusercontent.com/ehsanisildur-ux/scope-latch/3a7552ee5ee96d47c24d58f3517f4f33b2ffda75/fixtures/ambiguous.md",
+      "sha256": "d79fe036629c5fdf8059b8d60b83eedc925aeec33da5da430a1b029ca0eba611"
+    }
+  },
+  "transactions": [
+    {
+      "label": "pool-deploy",
+      "action": "deploy",
+      "hash": "0x422fbeee26ac8706effb8324d6853d057dc57e3543a2463a28b185dcc6bb3811"
+    },
+    {
+      "label": "atomic-grant",
+      "action": "request",
+      "hash": "0x9d72ba3e2116040828f49305242e6608af6292e1c8ae6e5babe5521603530a75"
+    },
+    {
+      "label": "conflict-queue",
+      "action": "request",
+      "hash": "0x1462f020196ed13b7d94156e5267a19762998f2e58c160e38f7ab431d6fa114d"
+    },
+    {
+      "label": "fifo-barrier",
+      "action": "request",
+      "hash": "0x1bdd5d0c018202a135960bc697dacabeb55614d6b1d8bb8625e21b7a7bc27402"
+    },
+    {
+      "label": "read-only",
+      "action": "request",
+      "hash": "0x8f475096d17181a96d87b8d8ba07942374e6720f7fde39ce5b671a78f25250bb"
+    },
+    {
+      "label": "uncertain",
+      "action": "request",
+      "hash": "0x2555c34eb856b13f6c07c6d2a1580e6ecfeb3ea3740449946b816828e32facd8"
+    },
+    {
+      "label": "cancel-barrier",
+      "action": "cancel",
+      "hash": "0x2b05f9aea5982c6eaf78af67d82ccb51a8771c5483e64e422c183c91d98c0097"
+    },
+    {
+      "label": "release-original",
+      "action": "release",
+      "hash": "0x1f4db8d7e4482fd663925b92f7d221efef4a34b208287300e518ef7685e6a560"
+    },
+    {
+      "label": "reuse",
+      "action": "request",
+      "hash": "0xb954bf49315ad00715691c29d1e28a58d8ea59ae5a221d56d31409c84cc63a18"
+    },
+    {
+      "label": "release-reuse",
+      "action": "release",
+      "hash": "0x466afee9c527e9da5127db55000a5bf7b437c483e50ce4ab1af477308cf4a2a0"
+    },
+    {
+      "label": "release-identity",
+      "action": "release",
+      "hash": "0x28332895e51e751de96f37a41ae9b053aa799a8477ac86af6a458aa9cab583b0"
+    }
+  ]
+}

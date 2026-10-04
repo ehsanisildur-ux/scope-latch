@@ -1,0 +1,181 @@
+{
+  "hash": "0x1bdd5d0c018202a135960bc697dacabeb55614d6b1d8bb8625e21b7a7bc27402",
+  "from_address": "0x94b10a64fEC80100C6b31807e926B8fc5f625982",
+  "to_address": "0xce35C4aD8e0B08e309863c35a3551478f3057fA8",
+  "data": {
+    "calldata": {
+      "readable": "{\"args\":[\"https://raw.githubusercontent.com/ehsanisildur-ux/scope-latch/3a7552ee5ee96d47c24d58f3517f4f33b2ffda75/fixtures/identity.md\",\"132d18827758682ded265889b667c6518605c3fbfdebcac5b7b064a3abf644c5\",]\"method\":\"request\"}"
+    }
+  },
+  "status": 7,
+  "result": 6,
+  "consensus_data": {
+    "votes": {
+      "0x4EDbE1FC9EAeC7b0EBA849b0C76AE73Eb0ad5C47": "agree",
+      "0x76c25AFC12c75485703cCFfd0083AA6201455B25": "agree",
+      "0x772ffCd1dF6Cc566eC4b8d3f4F4f8eBbb6B36C84": "disagree",
+      "0x9ea87b28DcA2F79fe108CF06a4c13B4c876AC23d": "disagree",
+      "0xBBb165E4c9d73a1493D363280f7067Cd07891dBE": "agree"
+    },
+    "leader_receipt": [
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "leader",
+        "vote": null,
+        "calldata": {
+          "readable": "{\"args\":[\"https://raw.githubusercontent.com/ehsanisildur-ux/scope-latch/3a7552ee5ee96d47c24d58f3517f4f33b2ffda75/fixtures/identity.md\",\"132d18827758682ded265889b667c6518605c3fbfdebcac5b7b064a3abf644c5\",]\"method\":\"request\"}"
+        },
+        "eq_outputs": {
+          "0": {
+            "status": "return",
+            "payload": {
+              "readable": "{\"resources\":[{\"decision\":\"UNUSED\"\"id\":\"database\"\"quote\":\"Do not change the database schema or rows\"},{\"decision\":\"UNUSED\"\"id\":\"routing\"\"quote\":\"Do not change the database schema or rows, shared proxy routes, DNS or load-balancer configuration.\"},{\"decision\":\"USED\"\"id\":\"identity\"\"quote\":\"rotate the signing key in the shared identity provider\"},]}"
+            }
+          }
+        },
+        "result": {
+          "status": "return",
+          "payload": {
+            "readable": "null"
+          }
+        }
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree",
+        "calldata": {
+          "readable": "{\"args\":[\"https://raw.githubusercontent.com/ehsanisildur-ux/scope-latch/3a7552ee5ee96d47c24d58f3517f4f33b2ffda75/fixtures/identity.md\",\"132d18827758682ded265889b667c6518605c3fbfdebcac5b7b064a3abf644c5\",]\"method\":\"request\"}"
+        },
+        "result": {
+          "status": "return",
+          "payload": {
+            "readable": "null"
+          }
+        }
+      }
+    ],
+    "validators": [
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "disagree"
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "disagree"
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree"
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree"
+      }
+    ]
+  },
+  "gaslimit": 3,
+  "nonce": 3,
+  "created_at": "2026-10-04T06:14:35.248883+00:00",
+  "leader_only": false,
+  "execution_mode": "NORMAL",
+  "origin_address": "0x94b10a64fEC80100C6b31807e926B8fc5f625982",
+  "triggered_on": null,
+  "appeal_validators_timeout": false,
+  "sim_config": {
+    "signed_rollup_transaction": "0xf9020903808307a12094b7278a61aa25c888815afc32ad3cc52ff24fe57580b901a427241a9900000000000000000000000094b10a64fec80100c6b31807e926b8fc5f625982000000000000000000000000ce35c4ad8e0b08e309863c35a3551478f3057fa80000000000000000000000000000000000000000000000000000000000000005000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000daf8d8b8d516046172677315dc0768747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f656873616e6973696c6475722d75782f73636f70652d6c617463682f336137353532656535656539366434376332346435386633353137663466333362326666646137352f66697874757265732f6964656e746974792e6d64840431333264313838323737353836383264656432363538383962363637633635313836303563336662666465626361633562376230363461336162663634346335066d6574686f643c72657175657374000000000000008301e481a047d4e6d06c1da3aaea31687ab1371557d3e162b6536e160bb464b93ec2b06d22a02b86098e064c8c558c4d4a7dc5fdfe1ecada85c631f1891c948dc5e3facae9fa"
+  },
+  "value_credited": false,
+  "sender": "0x94b10a64fEC80100C6b31807e926B8fc5f625982",
+  "recipient": "0xce35C4aD8e0B08e309863c35a3551478f3057fA8",
+  "tx_id": "0x1bdd5d0c018202a135960bc697dacabeb55614d6b1d8bb8625e21b7a7bc27402",
+  "activator": "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11",
+  "last_leader": "0xBBb165E4c9d73a1493D363280f7067Cd07891dBE",
+  "result_name": "MAJORITY_AGREE",
+  "num_of_rounds": "2",
+  "last_round": {
+    "round": "1",
+    "leader_index": "0",
+    "votes_committed": "5",
+    "votes_revealed": "5",
+    "appeal_bond": "0",
+    "rotations_left": "2",
+    "result": 6,
+    "round_validators": [
+      "0xBBb165E4c9d73a1493D363280f7067Cd07891dBE",
+      "0x9ea87b28DcA2F79fe108CF06a4c13B4c876AC23d",
+      "0x772ffCd1dF6Cc566eC4b8d3f4F4f8eBbb6B36C84",
+      "0x4EDbE1FC9EAeC7b0EBA849b0C76AE73Eb0ad5C47",
+      "0x76c25AFC12c75485703cCFfd0083AA6201455B25"
+    ],
+    "validator_votes_hash": [
+      "0xa50a13a33afc3d846f1decb12d9e40253cd47a65ca615d3237566dc2823f76f9",
+      "0xe1032aa499d980a7ec21b8b5a6e273c119b193bb66cb32557e8fcbddb0dec5f6",
+      "0x567b079960842e644def40b2d877ba474547c842de90894b675ea5444af0b833",
+      "0x3c94cc43682e269042aef7603877c8939e0596c60c0ee7bee4053f383de4895f",
+      "0x5aa2b60b7477e8cef78108968d05e325403cd8fb60f2c21f9e187a08398e1b1b"
+    ],
+    "validator_votes": [
+      1,
+      2,
+      2,
+      1,
+      1
+    ],
+    "validator_votes_name": [
+      "AGREE",
+      "DISAGREE",
+      "DISAGREE",
+      "AGREE",
+      "AGREE"
+    ]
+  },
+  "type": 2,
+  "status_name": "FINALIZED"
+}

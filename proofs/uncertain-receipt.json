@@ -1,0 +1,189 @@
+{
+  "hash": "0x2555c34eb856b13f6c07c6d2a1580e6ecfeb3ea3740449946b816828e32facd8",
+  "from_address": "0x94b10a64fEC80100C6b31807e926B8fc5f625982",
+  "to_address": "0xce35C4aD8e0B08e309863c35a3551478f3057fA8",
+  "data": {
+    "calldata": {
+      "readable": "{\"args\":[\"https://raw.githubusercontent.com/ehsanisildur-ux/scope-latch/3a7552ee5ee96d47c24d58f3517f4f33b2ffda75/fixtures/ambiguous.md\",\"d79fe036629c5fdf8059b8d60b83eedc925aeec33da5da430a1b029ca0eba611\",]\"method\":\"request\"}"
+    }
+  },
+  "status": 7,
+  "result": 6,
+  "consensus_data": {
+    "votes": {
+      "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11": "agree",
+      "0x36728d2a123aB444E603EE5b2ad17d18Bb193557": "agree",
+      "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100": "idle",
+      "0x4EDbE1FC9EAeC7b0EBA849b0C76AE73Eb0ad5C47": "idle",
+      "0xDB1c35c1f05d885999b8f13e5735307BcC16Be88": "agree"
+    },
+    "leader_receipt": [
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "leader",
+        "vote": null,
+        "calldata": {
+          "readable": "{\"args\":[\"https://raw.githubusercontent.com/ehsanisildur-ux/scope-latch/3a7552ee5ee96d47c24d58f3517f4f33b2ffda75/fixtures/ambiguous.md\",\"d79fe036629c5fdf8059b8d60b83eedc925aeec33da5da430a1b029ca0eba611\",]\"method\":\"request\"}"
+        },
+        "eq_outputs": {
+          "0": {
+            "status": "return",
+            "payload": {
+              "readable": "{\"resources\":[{\"decision\":\"UNUSED\"\"id\":\"database\"\"quote\":\"No database or identity-provider changes are planned.\"},{\"decision\":\"UNCERTAIN\"\"id\":\"routing\"\"quote\":\"It is unspecified whether this means editing shared proxy configuration or only changing the traffic sent to existing routes.\"},{\"decision\":\"UNUSED\"\"id\":\"identity\"\"quote\":\"No database or identity-provider changes are planned.\"},]}"
+            }
+          }
+        },
+        "result": {
+          "status": "return",
+          "payload": {
+            "readable": "null"
+          }
+        }
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree",
+        "calldata": {
+          "readable": "{\"args\":[\"https://raw.githubusercontent.com/ehsanisildur-ux/scope-latch/3a7552ee5ee96d47c24d58f3517f4f33b2ffda75/fixtures/ambiguous.md\",\"d79fe036629c5fdf8059b8d60b83eedc925aeec33da5da430a1b029ca0eba611\",]\"method\":\"request\"}"
+        },
+        "result": {
+          "status": "return",
+          "payload": {
+            "readable": "null"
+          }
+        }
+      }
+    ],
+    "validators": [
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree"
+      },
+      {
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stderr": "Validator execution cancelled after quorum",
+          "stdout": "",
+          "raw_error": {
+            "fatal": false,
+            "causes": [
+              "VALIDATOR_QUORUM_REACHED"
+            ]
+          },
+          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+        },
+        "mode": "validator",
+        "vote": "idle"
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree"
+      },
+      {
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stderr": "Validator execution cancelled after quorum",
+          "stdout": "",
+          "raw_error": {
+            "fatal": false,
+            "causes": [
+              "VALIDATOR_QUORUM_REACHED"
+            ]
+          },
+          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+        },
+        "mode": "validator",
+        "vote": "idle"
+      }
+    ]
+  },
+  "gaslimit": 5,
+  "nonce": 5,
+  "created_at": "2026-10-04T06:17:02.386059+00:00",
+  "leader_only": false,
+  "execution_mode": "NORMAL",
+  "origin_address": "0x94b10a64fEC80100C6b31807e926B8fc5f625982",
+  "triggered_on": null,
+  "appeal_validators_timeout": false,
+  "sim_config": {
+    "signed_rollup_transaction": "0xf9020905808307a12094b7278a61aa25c888815afc32ad3cc52ff24fe57580b901a427241a9900000000000000000000000094b10a64fec80100c6b31807e926b8fc5f625982000000000000000000000000ce35c4ad8e0b08e309863c35a3551478f3057fa80000000000000000000000000000000000000000000000000000000000000005000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000dbf8d9b8d616046172677315e40768747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f656873616e6973696c6475722d75782f73636f70652d6c617463682f336137353532656535656539366434376332346435386633353137663466333362326666646137352f66697874757265732f616d626967756f75732e6d64840464373966653033363632396335666466383035396238643630623833656564633932356165656333336461356461343330613162303239636130656261363131066d6574686f643c726571756573740000000000008301e481a069e84a9c1e901f7a6ccf5f988e997b0bbbaa191a9e3b2279eb2ad1b04e4f0e35a0363b1602d9c874f2f296511a2571e54703fe807bf3a3b701757d523c219c9d90"
+  },
+  "value_credited": false,
+  "sender": "0x94b10a64fEC80100C6b31807e926B8fc5f625982",
+  "recipient": "0xce35C4aD8e0B08e309863c35a3551478f3057fA8",
+  "tx_id": "0x2555c34eb856b13f6c07c6d2a1580e6ecfeb3ea3740449946b816828e32facd8",
+  "activator": "0x36728d2a123aB444E603EE5b2ad17d18Bb193557",
+  "last_leader": "0x36728d2a123aB444E603EE5b2ad17d18Bb193557",
+  "result_name": "MAJORITY_AGREE",
+  "num_of_rounds": "1",
+  "last_round": {
+    "round": "0",
+    "leader_index": "0",
+    "votes_committed": "5",
+    "votes_revealed": "5",
+    "appeal_bond": "0",
+    "rotations_left": "3",
+    "result": 6,
+    "round_validators": [
+      "0x36728d2a123aB444E603EE5b2ad17d18Bb193557",
+      "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11",
+      "0x4EDbE1FC9EAeC7b0EBA849b0C76AE73Eb0ad5C47",
+      "0xDB1c35c1f05d885999b8f13e5735307BcC16Be88",
+      "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100"
+    ],
+    "validator_votes_hash": [
+      "0xc64106da238d10d85e786a47ca259daf4c4a30564f78c41495bceb7abf93fcb1",
+      "0xde5a259d43e67888460c25e7ad707c451e39613a7b929aba7f91fcf146ef8e45",
+      "0xb59f3b1bc87cadfb6e27ef4f23a765653e3a3945dc5056d572f2fdcf9470860d",
+      "0xc7f7f97c7c4a51bf4f631b4496d9f921b5243e011af289f63ec288c63155cba1",
+      "0xeda336e5406174c7dd5691a7a8eebd2959ab24959fecb104a7a3fa2a4d8ad86b"
+    ],
+    "validator_votes": [
+      1,
+      1,
+      5,
+      1,
+      5
+    ],
+    "validator_votes_name": [
+      "AGREE",
+      "AGREE",
+      "IDLE",
+      "AGREE",
+      "IDLE"
+    ]
+  },
+  "type": 2,
+  "status_name": "FINALIZED"
+}

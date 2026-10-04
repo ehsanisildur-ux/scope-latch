@@ -14,4 +14,8 @@ ScopeLatch is a standalone GenLayer semaphore for cooperating clients sharing te
 - Repository: https://github.com/ehsanisildur-ux/scope-latch
 - Onchain proofs: https://github.com/ehsanisildur-ux/scope-latch/blob/main/proofs/README.md
 
-Live-proof claims become submission-ready only after deployment and receipt verification pass.
+StudioNet contract: `0xce35C4aD8e0B08e309863c35a3551478f3057fA8`.
+
+Deployment: https://explorer-studio.genlayer.com/tx/0x422fbeee26ac8706effb8324d6853d057dc57e3543a2463a28b185dcc6bb3811
+
+All 11 receipts finalized with MAJORITY_AGREE and successful execution; source commitments and every recorded lock state passed verification. Receipts retain dissenting votes.

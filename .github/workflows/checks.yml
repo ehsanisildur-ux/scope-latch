@@ -12,3 +12,7 @@ jobs:
       - run: genvm-lint download --version v0.2.16
       - run: genvm-lint check contracts/scope_latch.py --json
       - run: pytest tests/direct/ -q
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/verify-proofs.cjs
