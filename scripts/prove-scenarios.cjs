@@ -115,6 +115,8 @@ async function rpc(method, params) {
     {name:'release-identity',method:'release',index:2,locks:[-1,-1,-1],statuses:['RELEASED','CANCELLED','RELEASED','NO_LOCKS','REVIEW','RELEASED']},
   ];
   for(const step of steps) {
+    // Leave room for receipt polls and shared gateway rate limits.
+    await new Promise(resolve=>setTimeout(resolve,15000));
     const args=step.method==='request'?[sources[step.source].url,sources[step.source].sha256]:[String(step.index)];
     const output=await invoke(step.name,['write',contract,step.method,'--args',...args]);
     const hash=output.match(/Write Transaction Hash:\s*(0x[0-9a-f]{64})/i)?.[1];
